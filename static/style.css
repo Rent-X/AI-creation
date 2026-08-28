@@ -1,0 +1,59 @@
+html{
+    background-color: rgb(12, 12, 18);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(12, 12, 18);
+    color: rgb(221, 221, 226);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Big-div{
+    flex-direction: column;
+    justify-content: center;
+}
+#Head-div{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;     /* Vertically centers text with logo */
+    gap: 1.5vw;               /* Proportional gap between image and text */
+    padding: 10px 20px;
+    width: max-content;   
+    margin-top:20vw ;
+}
+#main-heading{
+    font-size: 10vw;         /* Text size scales dynamically with screen size */    /* Fallback constraint for mobile readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean tech font */
+    font-weight: 600;         /* Semi-bold appearance */       /* Professional dark grey instead of harsh pure black */
+    margin:0;               /* Removes default browser h1 margins */
+    white-space: nowrap;
+    width: max-content;
+}
+.logo-img {
+    width: 25vw;               /* Image width is 6% of the screen width */
+    min-width: 40px;          /* Prevents it from getting too small on mobile */
+    max-width: 1000px;          /* Prevents it from getting too huge on desktop */
+    height: auto;             /* Keeps the image aspect ratio perfect (no distortion) */
+    display: block;
+}
+#input-container{
+    align-items:center;
+}
+#main-container{
+    border-radius: 4vw;
+    background-color: grey;
+    color: aliceblue;
+    padding: 2.5vw;
+    width: 50vw;
+}
+@media (max-width: 600px) {
+    .logo-text {
+        font-size: 18px;      /* Locks font size on small phone viewports */
+    }
+}
